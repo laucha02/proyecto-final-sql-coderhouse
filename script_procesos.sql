@@ -1,5 +1,5 @@
 #Procesos
-DELIMITER $$
+DELIMITER $$ 
 
 CREATE PROCEDURE limpiar_registro_pasajeros_arribados()
 BEGIN
