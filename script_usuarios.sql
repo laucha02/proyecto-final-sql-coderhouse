@@ -1,4 +1,4 @@
-USE mysql;
+USE mysql; 
 
 DROP USER 'usuario_solo_lectura'@'localhost';
 DROP USER 'administrador'@'localhost';
