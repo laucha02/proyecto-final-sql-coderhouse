@@ -27,7 +27,7 @@ BEGIN
 	INSERT INTO log (fecha_hora, usuario, accion, tabla, columna_modificada, valor_anterior, valor_nuevo, id_entidad)
     VALUES (NOW(), USER(), 'Insert', 'pasajero','-','-','-', NEW.id_pasajero);
 END
-
+ 
 $$
 
 
