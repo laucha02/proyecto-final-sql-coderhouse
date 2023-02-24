@@ -1,4 +1,4 @@
-#Vistas
+ #Vistas
 
 CREATE OR REPLACE VIEW informacion_pasajero AS (SELECT
 
