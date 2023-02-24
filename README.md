@@ -10,16 +10,16 @@ Los objetivos son brindar servicios de transporte de calidad a sus clientes, mej
 # Situación problemática
 Las situaciones problemáticas que va a enfrentar esta empresa son:
 
--Problemas de seguridad de datos: como cualquier base de datos, puede ser vulnerables a ciberataques, ya que son datos de información personal de los pasajeros, como dni, teléfono, dirección. No son tan sensibles como contraseñas, o información de las tarjetas de crédito pero nadie quisiera que alguien tenga tu dirección.
--Problemas de rendimiento: al tener un flujo de personas muy amplio, aumentando las tablas de pasajeros, pasajes, reportes, opiniones, entre otros, podría tener un impacto en el rendimiento y la eficiencia.
+ - Problemas de seguridad de datos: como cualquier base de datos, puede ser vulnerables a ciberataques, ya que son datos de información personal de los pasajeros, como dni, teléfono, dirección. No son tan sensibles como contraseñas, o información de las tarjetas de crédito pero nadie quisiera que alguien tenga tu dirección.
+ - Problemas de rendimiento: al tener un flujo de personas muy amplio, aumentando las tablas de pasajeros, pasajes, reportes, opiniones, entre otros, podría tener un impacto en el rendimiento y la eficiencia.
 
 # Modelo de negocio
 El modelo de negocio de esta empresa es generar ingresos a través de la venta de pasajes del tren a los pasajeros.
 
 # Antes de la ejecución
 
--Algunos datos son incongruentes ya que fueron generados al azar. Por ejemplo, la fecha y hora de una partida de tren es '2022-04-23 20:00:00' y la llegada de éste es '2023-07-17 15:00:00' (actualmente ningún tren viaja durante meses para llegar a su destino); ó como su nombre fuera de género masculino pero en la columna ´genero_masculino´ diga Femenino; entre otros
--Para ejecutar correctamente los scripts, tiene que hacerlo en orden:
+- Algunos datos son incongruentes ya que fueron generados al azar. Por ejemplo, la fecha y hora de una partida de tren es '2022-04-23 20:00:00' y la llegada de éste es '2023-07-17 15:00:00' (actualmente ningún tren viaja durante meses para llegar a su destino); ó como su nombre fuera de género masculino pero en la columna ´genero_masculino´ diga Femenino; entre otros
+- Para ejecutar correctamente los scripts, tiene que hacerlo en orden:
 1)script_tablas
 2)script_datos
 3)script_triggers
