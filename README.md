@@ -30,19 +30,19 @@ Y luego para script_procesos, script_funciones, script_vistas y script_usuarios 
 
 Se encuentra en el repositorio con el nombre de DER+Trueba.
 
-#Listado de tablas con descripción de estructura
+# Listado de tablas con descripción de estructura
 
 Se encuentra en el repositorio bajo el nombre de TABLAS+Trueba.
 
-#Scripts de inserción de datos
+# Scripts de inserción de datos
 
 Se encuentra en el repositorio con el nombre de script_datos.
 
-#Listado de los scripts de vistas, procesos, funciones y triggers
+# Listado de los scripts de vistas, procesos, funciones y triggers
 
 Se encuentra en el repositorio con el nombre de script_vistas, script_procesos, script_funciones y script_triggers.
 
-#Informes generados en base a la información de la base
+# Informes generados en base a la información de la base
 
 Esto se hace a partir de las vistas ´informacion_pasajero´, ´informacion_empleado´ y ´informacion_rutas´.
 
