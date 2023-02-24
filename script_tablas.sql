@@ -1,6 +1,6 @@
 #Creación de la base de datos
 
-DROP SCHEMA IF EXISTS empresa_trenes;
+DROP SCHEMA IF EXISTS empresa_trenes; 
 CREATE SCHEMA empresa_trenes;
 USE empresa_trenes;
 SET SQL_SAFE_UPDATES=0;
