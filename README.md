@@ -20,11 +20,11 @@ El modelo de negocio de esta empresa es generar ingresos a través de la venta d
 
 - Algunos datos son incongruentes ya que fueron generados al azar. Por ejemplo, la fecha y hora de una partida de tren es '2022-04-23 20:00:00' y la llegada de éste es '2023-07-17 15:00:00' (actualmente ningún tren viaja durante meses para llegar a su destino); ó como su nombre fuera de género masculino pero en la columna ´genero_masculino´ diga Femenino; entre otros
 - Para ejecutar correctamente los scripts, tiene que hacerlo en orden:
-1)script_tablas
-2)script_datos
-3)script_triggers
+1. script_tablas
+2. script_datos
+3. script_triggers
 Y luego para script_procesos, script_funciones, script_vistas y script_usuarios es indiferente el orden
-Si quiere saber qué hace cada proceso, funcion, vista, trigger y usuario, fíjese en el archivo INFORMACION_OBJETOS, allí se explica de manera detallada
+- Si quiere saber qué hace cada proceso, funcion, vista, trigger y usuario, fíjese en el archivo INFORMACION_OBJETOS, allí se explica de manera detallada
 
 # Diagrama Entidad-Relación
 
@@ -49,10 +49,10 @@ Esto se hace a partir de las vistas ´informacion_pasajero´, ´informacion_empl
 
 # Herramientas y tecnologías usadas
 
--Mysql Workbench
--Google Drive
--generatedata.com
--Microsoft Word
--Microsoft Excel
--Git
--Github
+- Mysql Workbench
+- Google Drive
+- generatedata.com
+- Microsoft Word
+- Microsoft Excel
+- Git
+- Github
