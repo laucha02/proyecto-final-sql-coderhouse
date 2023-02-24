@@ -1,4 +1,4 @@
-#Funciones
+#Funciones 
 DELIMITER $$
 
 CREATE FUNCTION obtener_estacion_empleado (id INT)
