@@ -24,7 +24,7 @@ INSERT INTO ciudades (id_ciudad, id_provincia, nombre_ciudad) VALUES
 (13, 5, 'San Miguel de Tucumán'),
 (14, 5, 'Yerba Buena'),
 (15, 5, 'Tafí Viejo');
-
+ 
 INSERT INTO trenes (id_tren, marca, patente, capacidad)
 VALUES
 (1, 'Siemens', 'ABC 123', 100),
