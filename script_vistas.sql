@@ -137,7 +137,91 @@ SELECT
     ON (R.id_ruta = PAS.id_ruta)
 	WHERE TIME(H.partida_fecha_hora) BETWEEN '18:00:00' AND '23:59:59'
     );    
+  
+
+CREATE OR REPLACE VIEW pasajes_llegada_madrugada AS (
+SELECT 
+
+	P.nombre_pasajero,
+    P.apellido_pasajero,
+    P.dni_pasajero,
+    PAS.id_pasaje,
+    R.llegada_estacion,
+    H.llegada_fecha_hora
+   
     
+    FROM pasajeros P
+    INNER JOIN pasajes PAS
+	ON (PAS.id_pasaje=P.id_pasaje_comprado)
+    INNER JOIN horarios H
+	ON (H.id_horario=PAS.id_horario)
+    INNER JOIN rutas R
+    ON (R.id_ruta = PAS.id_ruta)
+	WHERE TIME(H.llegada_fecha_hora) BETWEEN '00:00:00' AND '06:00:00'
+    );
+    
+CREATE OR REPLACE VIEW pasajes_llegada_mañana AS (
+SELECT 
+
+	P.nombre_pasajero,
+    P.apellido_pasajero,
+    P.dni_pasajero,
+    PAS.id_pasaje,
+    R.llegada_estacion,
+    H.llegada_fecha_hora
+   
+    
+    FROM pasajeros P
+    INNER JOIN pasajes PAS
+	ON (PAS.id_pasaje=P.id_pasaje_comprado)
+    INNER JOIN horarios H
+	ON (H.id_horario=PAS.id_horario)
+    INNER JOIN rutas R
+    ON (R.id_ruta = PAS.id_ruta)
+	WHERE TIME(H.llegada_fecha_hora) BETWEEN '06:00:00' AND '12:00:00'
+    );
+    
+CREATE OR REPLACE VIEW pasajes_llegada_tarde AS (
+SELECT 
+
+	P.nombre_pasajero,
+    P.apellido_pasajero,
+    P.dni_pasajero,
+    PAS.id_pasaje,
+    R.llegada_estacion,
+    H.llegada_fecha_hora
+   
+    
+    FROM pasajeros P
+    INNER JOIN pasajes PAS
+	ON (PAS.id_pasaje=P.id_pasaje_comprado)
+    INNER JOIN horarios H
+	ON (H.id_horario=PAS.id_horario)
+    INNER JOIN rutas R
+    ON (R.id_ruta = PAS.id_ruta)
+	WHERE TIME(H.llegada_fecha_hora) BETWEEN '12:00:00' AND '18:00:00'
+    );    
+CREATE OR REPLACE VIEW pasajes_llegada_noche AS (
+SELECT 
+
+	P.nombre_pasajero,
+    P.apellido_pasajero,
+    P.dni_pasajero,
+    PAS.id_pasaje,
+    R.llegada_estacion,
+    H.llegada_fecha_hora
+   
+    
+    FROM pasajeros P
+    INNER JOIN pasajes PAS
+	ON (PAS.id_pasaje=P.id_pasaje_comprado)
+    INNER JOIN horarios H
+	ON (H.id_horario=PAS.id_horario)
+    INNER JOIN rutas R
+    ON (R.id_ruta = PAS.id_ruta)
+	WHERE TIME(H.llegada_fecha_hora) BETWEEN '18:00:00' AND '23:59:59'
+    );   
+  
 CREATE OR REPLACE VIEW accidentes_trenes_este_mes AS (
 SELECT 
 	
