@@ -222,35 +222,5 @@ SELECT
 	WHERE TIME(H.llegada_fecha_hora) BETWEEN '18:00:00' AND '23:59:59'
     );   
   
-CREATE OR REPLACE VIEW accidentes_trenes_este_mes AS (
-SELECT 
-	
-    REP.accidente_descripcion,
-    REP.accidente_fecha_hora,
-    R.nombre_ruta,
-    T.id_tren
-		
-FROM reporte_accidentes_trenes REP
-INNER JOIN rutas R
-ON (REP.id_ruta = R.id_ruta)
-INNER JOIN trenes T
-ON (REP.id_tren = T.id_tren)
-WHERE MONTH(accidente_fecha_hora) = MONTH(CURDATE())
-	);
-    
 
-
-
-CREATE OR REPLACE VIEW accidentes_estaciones_este_mes AS (
-SELECT 
-	
-    REP.accidente_descripcion,
-    REP.accidente_fecha_hora,
-    E.nombre_estacion
-		
-FROM reporte_accidentes_estaciones REP
-INNER JOIN estaciones E
-ON (REP.id_estacion = E.id_estacion)
-WHERE MONTH(accidente_fecha_hora) = MONTH(CURDATE())
-	);
     
